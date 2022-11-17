@@ -1,0 +1,28 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_tk_logic_app_dev_name": {
+            "value": "tk-logic-app-dev"
+        },
+        "workflows_tk-logic-app-dev_parameters_$connections": {
+            "value": {
+                "azureblob": {
+                    "connectionId": "/subscriptions/0817546b-75ca-4d4f-8319-505d8a966431/resourceGroups/sample-dev-rg/providers/Microsoft.Web/connections/azureblob-1",
+                    "connectionName": "azureblob-1",
+                    "connectionProperties": {
+                        "authentication": {
+                            "type": "ManagedServiceIdentity"
+                        }
+                    },
+                    "id": "/subscriptions/0817546b-75ca-4d4f-8319-505d8a966431/providers/Microsoft.Web/locations/eastus2/managedApis/azureblob"
+                },
+                "outlook": {
+                    "connectionId": "/subscriptions/0817546b-75ca-4d4f-8319-505d8a966431/resourceGroups/sample-dev-rg/providers/Microsoft.Web/connections/outlook",
+                    "connectionName": "outlook",
+                    "id": "/subscriptions/0817546b-75ca-4d4f-8319-505d8a966431/providers/Microsoft.Web/locations/eastus2/managedApis/outlook"
+                }
+            }
+        }
+    }
+}
